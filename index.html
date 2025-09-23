@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Workshop on Data Integrity and Secure Cloud Computing (DISCC 2025)</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+	<style>
+		.popover {
+		        max-width: 80% !important;
+		    }
+	</style>
+</head>
+<body data-spy="scroll" data-target="#site-nav">
+    <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
+        <div class="container">
+            <div class="navbar-header">
+
+                <!-- logo -->
+                <div class="site-branding">
+                    <a class="logo" href="index.html">
+                        
+                        <!-- logo image  -->
+                        <!-- <img src="assets/images/logo.png" alt="Logo"> -->
+                        DISCC 2025
+                    </a>
+                </div>
+
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div><!-- /.navbar-header -->
+
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <!-- navigation menu -->
+                    <li class="active"><a data-scroll href="#about">About</a></li>
+                    <li><a data-scroll href="#about">Call for Contributions</a></li>
+                    <!--<li><a data-scroll href="#speakers">Speakers</a></li>-->
+                    <li><a data-scroll href="#program">Program</a></li>
+					<li><a data-scroll href="#org">Organizers</a></li>
+                
+                </ul>
+            </div>
+        </div><!-- /.container -->
+    </nav>
+
+    <header id="site-header" class="site-header valign-center"> 
+        <div class="intro">
+
+            <p>March 2<sup>nd</sup> 2025</p>
+            
+            <h1 class="display-1">DISCC 2025</h1>
+            <h1>3<sup>rd</sup> Workshop on Data Integrity and Secure Cloud Computing</h1>
+            
+            <p>In conjunction with the 31<sup>st</sup> International Symposium on<br>
+				High-Performance Computer Architecture (HPCA 2025)</p>
+            
+            <a class="btn btn-white" data-scroll href="#about">Contribute Now</a>
+
+            <a class="btn btn-white" data-scroll href="#registration">Register Now</a>
+        
+        </div>
+    </header>
+
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+
+                    <h3 class="section-title">About</h3>
+                    
+                    <p>
+                    Recent papers from Meta (Facebook) and Google <sup><a href="https://arxiv.org/abs/2102.11245" rel="nofollow" target="_blank">1</a> <a href="https://dl.acm.org/doi/10.1145/3458336.3465297" rel="nofollow" target="_blank">2</a> <a href="https://research.google/pubs/pub51477/" rel="nofollow" target="_blank">3</a></sup> have created a major concern about data integrity in large-scale computing in cloud data centers. The term “mercurial cores” has been coined <sup><a href="https://dl.acm.org/doi/10.1145/3458336.3465297" rel="nofollow" target="_blank">2</a></sup> to refer to errant processor cores that have been clearly diagnosed as being the source of generating silent data errors – and recent panels (as referred to above) have brought together experts from cloud service providers and processor chip designers with the objective of raising awareness of this acute problem, and also encouraging leading edge research to devise affordable chip and system-level mitigation solutions. In addition to such data integrity concerns, the rise of data security and privacy breaches in cloud computing environments has accelerated research and development of practical solutions that enable computing with encrypted data (e.g., advanced cryptographic methods like Fully Homomorphic Computing or FHE); e.g., recent papers <sup><a href="https://dl.acm.org/doi/10.1145/3470496.3527393" rel="nofollow" target="_blank">4</a> <a href="https://dl.acm.org/doi/10.1145/3470496.3527415" rel="nofollow" target="_blank">5</a> <a href="https://arxiv.org/abs/2109.05371" rel="nofollow" target="_blank">6</a> <a href="https://ieeexplore.ieee.org/document/9407118" rel="nofollow" target="_blank">7</a></sup>.
+                    </p>
+                    <p>
+					This workshop (<strong>DISCC-2025</strong>) proposes to bring together aspects of data integrity and security in a single, unified forum. The workshop will comprise of a keynote speech, several contributed papers and, time permitting, a closing panel session involving leading edge experts in data integrity and security in a hyper-scale cloud computing setting. Potential speakers are encouraged to submit an extended abstract (1-2 pages) highlighting the key contributions in the light of the above-stated technical scope of the problem. Solution approaches at the algorithm, software/firmware and/or hardware level are encouraged for early dissemination and discussion in w workshop setting. Papers dealing with testing (or detection, diagnosis) of silent data errors or of malicious data breaches are solicited. Similarly, cost-effective mitigation solutions are invited for presentation.
+                    <p>
+
+                    Topics of interest include but are not limited to:
+                    </p>
+                    <ul>
+                        <li>Testing (including detection and/or diagnosis) of silent data errors (SDEs) for plaintext and/or HE-mode ciphertext computation. </li>
+                        <li> Detection and mitigation of malicious attacks that can lead to SDEs.</li>
+                        <li>	Privacy-preserving data-secure computation: novel software and/or hardware solutions.</li>
+                        <li>	Characterization of HE workloads for “discovery” of hardware acceleration primitives.</li>
+                        <li>	Simulation and/or emulation based modeling methods to evaluate DISCC domain software-hardware solutions.</li>
+                        <li>	Modeling of cloud-edge solutions for specific safety-, security- and/or privacy-critical applications: e.g., autonomous vehicles, internet banking, credit card fraud detection, etc.</li>
+                    </ul>
+                    <p>
+
+                    </p>
+
+                    <h3 class="section-title multiple-title">Call for Contributions</h3>
+                    <p>
+                        Submitted manuscripts must be in English of <strong>up to 2 pages</strong> (with same <a href="https://hpca-conf.org/2025/call-for-papers/" rel="nofollow" target="_blank">formatting guidelines as main conference</a>). Submissions should be submitted to the following <a href="https://easychair.org/conferences/?conf=discc2025" rel="nofollow" target="_blank">link</a> by <del>January 10<sup>th</sup></del> <strong><font color="red">January 31<sup>st</sup>, 2025</font></strong>. If you have questions regarding submission, please contact us: <a href="mailto:info@disccworkshop.org">info@disccworkshop.org</a>
+                    </p>
+
+                </div><!-- /.col-sm-6 -->
+
+                <div class="col-sm-6">
+
+                    <h3 class="section-title multiple-title">Organizing Committee</h3>
+                    <p>
+					<ul class="list-arrow-right">
+                        <li>Pradip Bose (IBM Research)</li>
+                        <li>Augusto Vega (IBM Research)</li>
+                        <li>Karthik Swaminathan (IBM Research)</li>
+                        <li>Jennifer Dworak (Southern Methodist University)</li>
+                        <li>Subhashish Mitra (Stanford University)</li>
+                        <li>Chris Wilkerson (Intel Corp.)</li>
+						<li>Nandhini Chandramoorthy (IBM Research)</li>
+						<li>Nathan Manohar (IBM Research)</li>
+                        <li>Nir Drucker (IBM Research)</li>
+						<li>Silvio Dragone (IBM Research)</li>
+					</ul>
+                    </p>
+
+					<!--
+                    <h3 class="section-title multiple-title">Advisory Program Committee</h3>
+                    <p>
+					<ul class="list-arrow-right">
+						<li>Peter Hochschild (Google)</li>
+						<li>Jeffrey Hicks (Intel Corp.)</li>
+						<li>Rob Chappell (Microsoft)</li>
+						<li>Harish Dixit (Meta)</li>
+						<li>Karthik Swaminathan (IBM Research)</li>
+						<li>Subhankar Pal (IBM Research)</li>
+						<li>Omri Soceanu (IBM Research)</li>
+						<li>Ambar Sarkar (NVIDIA)</li>
+						<li>Shawn Blanton (Carnegie-Mellon University)</li>
+						<li>Sarita Adve (University of Illinois at Urbana-Champaign)</li>
+						<li>David Brooks (Harvard University)</li>
+						<li>Brandon Reagan (New York University)</li>
+						<li>Rashmi Agrawal (Boston University)</li>
+					</ul>
+                    </p>
+					-->
+					
+					<!--
+                    <h3 class="section-title multiple-title">Extended Organizing Committee</h3>
+                    <p>
+					<ul class="list-arrow-right">
+						<li>Ramon Bertran (IBM Research)</li>
+						<li>Nandhini Chandramoorthy (IBM Research)</li>
+						<li>Nathan Manohar (IBM Research)</li>
+						<li>Nir Drucker (IBM Research)</li>
+						<li>Karthik Swaminathan (IBM Research)</li>
+						<li>Subhankar Pal (IBM Research)</li>
+						<li>Aporva Amarnath (IBM Research)</li>
+						<li>Bharat Sukhwani (IBM Research)</li>
+						<li>Augusto Vega (IBM Research)</li>
+					</ul>
+                    </p>
+					-->
+
+                    <h3 class="section-title">Past Editions</h3>
+					<p>
+                    <ul class="list-arrow-right">
+                        <li><a href="https://dtrilla.github.io/discc-workshop-2023/" rel="nofollow" target="_blank">2023</a></li>
+                    </ul>
+                    <ul class="list-arrow-right">
+                        <li><a href="https://dtrilla.github.io/discc-workshop-2022/" rel="nofollow" target="_blank">2022</a></li>
+                    </ul>
+					</p>
+
+					<h3 class="section-title">Contact</h3>
+                    <p>    
+                    <ul class="list-arrow-right">
+                    <li><a href="mailto:info@disccworkshop.org">info@disccworkshop.org</a></li> 
+                    </ul>
+					</p>
+
+                </div><!-- /.col-sm-6 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section>
+    
+    <section id="important" class="section bg-image-1 facts text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+
+                    <i class="ion-ios-calendar"></i>
+                    <h3>Paper Submission Deadline<br>January 31<sup>st</sup>, 2025</h3>
+                </div>
+                <div class="col-sm-4">
+
+                    <i class="ion-ios-calendar"></i>
+                    <h3>Notification Date<br>February 7<sup>th</sup>, 2025</h3>
+                
+                </div>
+                <div class="col-sm-4">
+
+                    <i class="ion-ios-calendar"></i>
+                    <h3>Workshop Date<br>March 2<sup>nd</sup>, 2025</h3>
+                
+                </div>
+                <!--
+                <div class="col-sm-3">
+                
+                    <i class="ion-ios-calendar"></i>
+                    <h3>Workshop date<br>March 24<sup>th</sup>, 2018</h3>
+                
+                </div>
+                -->
+            </div><!-- row -->
+        </div><!-- container -->
+    </section>
+
+
+	<!--
+    <section id="speakers" class="section speakers">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="section-title">Invited Speakers</h3>
+            </div>
+          </div>
+		  
+		  <em>To be announced</em>
+
+          <div class="row">
+            <div class="col-md-2">
+              <div class="speaker">
+                <figure>
+                  <img alt="" class="img-responsive center-block" src="assets/images/speakers/ajay-joshi.jpg" style="border-radius:50%;width:300px;" data-toggle="popover"
+				  data-container="body" data-placement="top" data-content="With the monetization of user data, data breaches in the cloud have become very common. In
+				  2022, there were close to 2,000 data breaches in the cloud, with the global average cost per data breach close to $5M. Therefore, the need for
+				  maintaining data security and privacy is becoming increasingly critical. Fully Homomorphic Encryption (FHE) has emerged as a potential solution as it
+				  enables computing on encrypted data. With FHE, one can provide strong data security and privacy guarantees. Unfortunately, operating on encrypted data
+				  is slow. We need innovations on both the cloud side and edge side to make FHE-based cloud computing practical.<br><br>
+				  In this talk, I'll first use our FHE profiling results to discuss opportunities and challenges for FHE-based cloud computing. Then I'll present our
+				  recent work (on both the cloud side and edge side) towards making FHE-based cloud computing practical. For accelerating the cloud-side operations,
+				  I'll present our efforts on Memory-Aware Design (MAD) techniques for FHE, an FPGA-based Accelerator for Bootstrappable FHE (FAB), and GPU-based
+				  Microarchitectural Extensions (GME) for FHE. For accelerating the edge-side operations, I'll present our work on RISC-V SoC for En/decryption Acceleration (RISE).">
+                </figure>
+              </div>
+            </div>
+            <div class="col-sm-10">
+              <h3>Fully Homomorphic Encryption-based Cloud Computing: Opportunities, Challenges, and (Some) Solutions</h3>
+                <h4>Ajay Joshi (Boston University)</h4>
+				<p>
+					<strong>Ajay Joshi</strong> is a Professor in the ECE department at Boston University. Before joining BU, he got his Ph.D. at Georgia Tech and then
+					worked as a postdoc at MIT. He was a Visiting Researcher at Google in 2017-18 and is currently an Architect at Lightmatter Inc.
+					His research is in the areas of computer architecture and digital VLSI with a focus on security and privacy, machine learning, and
+					photonic computing. He received the NSF CAREER Award in 2012, Boston University ECE Department's Award for Excellence in Teaching
+					in 2014, Best Paper Awards at ASIACCS 2018 and HOST 2023, and the Google Faculty Research Award in 2018 and 2019. He currently serves
+					as the Associate Editor for IEEE Transactions on VLSI Systems.
+				</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-2">
+              <div class="speaker">
+                <figure>
+                  <img alt="" class="img-responsive center-block" src="assets/images/speakers/brandon-reagen.jpg" style="border-radius:50%;width:300px;"
+				  data-toggle="popover" data-container="body" data-placement="top" data-content="In this talk I will review the technologies and challenges that combine
+				  to enable and restrain confidential machine learning. This includes the issues nonlinear functions pose to efficient (and effective) inference as well
+				  as the computational, communication, and storage issues and what can be done at the algorithm, software, and architecture level to remedy them.">
+                </figure>
+              </div>
+            </div>
+            <div class="col-sm-10">
+              <h3>Towards Practical Privacy-Preserving Neural Inference</h3>
+                <h4>Brandon Reagen (New York University)</h4>
+				<p>
+					<strong>Brandon Reagen</strong> is an Assistant Professor at New York University in the Tandon school of engineering. He received his Ph.D from Harvard
+					in 2018 and undergraduate degree from the University of Massachusetts, Amherst in 2012. His research focuses on novel hardware accelerator
+					designs for high performance and low power with applications in privacy preserving computation, including homomorphic encryption and secure
+					multi-party computation.					
+				</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-2">
+              <div class="speaker">
+                <figure>
+                  <img alt="" class="img-responsive center-block" src="assets/images/speakers/ro-cammarota.jpg" style="border-radius:50%;width:300px;"
+				  data-toggle="popover" data-container="body" data-placement="top" data-content="">
+                </figure>
+              </div>
+            </div>
+            <div class="col-sm-10">
+              <h3>Unlocking the future: Intel HERACLES and The Dawn of Encrypted Computing</h3>
+                <h4>Rosario Cammarota and Chris Wilkerson (Intel Corp.)</h4>
+				<p>
+					<strong>Rosario Cammarota</strong>, "Ro," is a principal engineer and Chief Scientist of Privacy-Enhanced Computing Research in the Emerging Security Lab at
+					Intel Labs. His work includes the theory, application, and standardization of processing encrypted data. Cammarota is the principal investigator
+					for the DARPA DPRIVE program and Intel academic centers focusing on privacy, cryptography, and security mechanisms, and leads standardization of
+					methods for encrypted data processing with FHE at ISO/IEC. He received his Ph.D. in Computer Science from the University of California Irvine in
+					2013. He is a prolific author and inventor, publishing over 50 peer-reviewed articles and opening more than 50 US patents. Ro Cammarota is a Senior
+					Member of IEEE and recipient of the SRC “Mahboob Khan” Outstanding Industry Liaison Award in 2017, 2018, and 2019.					
+				</p>
+            </div>
+            <div class="col-md-2">
+              <div class="speaker">
+                <figure>
+                  <img alt="" class="img-responsive center-block" src="assets/images/speakers/chris-wilkerson.jpg" style="border-radius:50%;width:300px;"
+				  data-toggle="popover" data-container="body" data-placement="top" data-content="">
+                </figure>
+              </div>
+            </div>
+            <div class="col-sm-10">
+				<p>
+					<strong>Chris Wilkerson</strong> is a Principal Engineer at Intel Corporation and has been in the industry for 26 years including 22 at Intel. Chris has worked on
+					a range of micro-architecture topics including low voltage micro architecture and circuits, low power, reliable design, out-of-order processor
+					design with particular focus on branch prediction, run-ahead processing, prefetching, cache architecture, cache replacement algorithms, etc. Chris
+					is currently the Principal Memory Architect on Intel’s DARPA funded DPRIVE Program developing an FHE accelerator.					
+				</p>
+            </div>
+          </div>
+          <div class="row">
+			  
+        </div>
+    </section>
+	-->
+
+    <section id="program" class="section schedule">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Program</h3>
+					
+                    <p>
+                    <table class="table table-hover">
+
+                      <thead class="thead-light">
+                        <tr>
+                          <th colspan=2 scope="col">Sunday, March 2<sup>nd</sup>, 2025<br><em>(all times are Pacific Standard Time)</em></th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <th scope="row" class="col-md-2">8:00 AM</th>
+                          <td><strong>Introduction and Welcoming Remarks</strong><br>
+							  Dr. Pradip Bose <em>(IBM Research)</em></td>
+                        </tr>
+                        <tr bgcolor="#FEF9E7">
+                          <td colspan="2" align ="center"><strong>SESSION 1: Privacy Protected (Data-Secure) Computing &mdash; Focus on AI Systems</strong></td>
+                        </tr>
+                        <tr bgcolor="#FEF9E7">
+                          <th scope="row" class="col-md-2">8:15 AM</th>
+                          <td><strong>HELayers-driven Data-Secure Computing (with FHENDI (HPCA 2025) as an illustrative target hardware accelerator)</strong><br>
+							Ehud Aharoni <em> (IBM Research - Israel), Subhankar Pal, Aporva Amarnath (IBM Research)</em><br>
+							Co-presenters: <em>Yongmo Park (IBM Research), Hayim Shaul (virtual) (IBM Research - Israel) </em></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">9:45 AM</th>
+                          <td><i>Coffee Break</i></td>
+                        </tr>
+                        <tr bgcolor="#FEF9E7">
+                          <th scope="row" class="col-md-2">10:15 AM</th>
+                          <td><strong>KEYNOTE TALK: Verification and Validation of Hardware Security Constructs</strong><br>
+							 <h4><a href="https://ece.umd.edu/clark/faculty/484/Ankur-Srivastava" target="_blank"> Prof. Ankur Srivastava <em>(Professor, University of Maryland)</em></h4></td>
+                        </tr>
+                        <tr bgcolor="#FEF9E7">
+                          <th scope="row" class="col-md-2">11:10 AM</th>
+                          <td><strong>Quantifying the Bit-Error Resilience of FHE Compute</strong><br>
+							  Augusto Vega <em>(IBM Research)</em><br> Co-presenter: <em>Mattias Mazzanti (U. Buenos Aires)</em></td>
+                        </tr>
+                        <tr bgcolor="#FEF9E7">
+                          <th scope="row" class="col-md-2">11:40 AM</th>
+                          <td><strong>DESC: A Trusted Execution Environment for Confidential Computing on RISC-V</strong><br>
+							  Jason Lowe-Power <em>(USC, LBNL)</em><br> Co-presenters: <em>Ayaz Akram (USC), Venkatesh Akella, Sean Peisert (USC/LBNL)</em></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">12:10 PM</th>
+                          <td><i>Lunch</i></td>
+                        </tr>
+                        <tr bgcolor="#E0FEFF">
+                          <td colspan="2" align ="center"><strong>SESSION 2: Data Integrity Issues and Resilient Design Practices &mdash; Focus on AI Systems</strong></td>
+                        </tr>
+                        <tr bgcolor="#E0FEFF">
+                          <th scope="row" class="col-md-2">1:15 PM</th>
+                          <td><strong>KEYNOTE TALK: Structural Tests with Functional Flavor to Address Silent Data Corruption Caused by Hardware Defects</strong><br>
+							 <h4><a href="https://engineering.purdue.edu/ECE/People/ptProfile?resource_id=3028" target="_blank"> Irith Pomeranz <em>(Purdue University)</em></h4></td>
+                        </tr>
+                        <tr bgcolor="#E0FEFF">
+                          <th scope="row" class="col-md-2">2:00 PM</th>
+                          <td><strong>Silent Data Corruption (SDC) Challenges in Large-Scale Computing &mdash; A Discussion</strong><br>
+							  Pradip Bose <em>(IBM Research)</em><br> Co-presenter: <em>Karthik Swaminathan (IBM Research)</em></td>
+                        </tr>
+                        <tr bgcolor="#E0FEFF">
+                          <th scope="row" class="col-md-2">2:45 PM</th>
+                          <td><strong>Robust Power Management (RPM) </strong><br>
+							  Alper Buyuktosunoglu <em>(IBM Research)</em><br>
+							  Co-presenters: Pradip Bose, Ramon Bertran, Philip Restle <em>(IBM Research)</em></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3:15 PM</th>
+                          <td><i>Coffee Break</i></td>
+                        </tr>
+                        <tr bgcolor="#E0FEFF">
+                          <th scope="row" class="col-md-2">3:45 PM</th>
+                          <td><strong>SER Vulnerability Assessment with a Focus on SDC</strong><br>
+							  Karthik Swaminathan <em>(IBM Research)</em><br>
+							  Co-presenters: Hans Jacobson, Pradip Bose <em>(IBM Research)</em></td>
+                        </tr>
+                        <tr bgcolor="#E0FEFF">
+                          <th scope="row" class="col-md-2">4:30 PM</th>
+                          <td><strong>Summary/Wrap-up/Q&A</strong><br>
+							  Pradip Bose <em>(IBM Research)</em></td>
+                        </tr>
+                        <tr bgcolor="#E0FEFF">
+                          <th scope="row" class="col-md-2">5:00 PM</th>
+                          <td><strong>Workshop Concludes</strong><br>
+							  Pradip Bose <em>(IBM Research)</em></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="org" class="section registration">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Organizing Committee</h3>
+                </div>
+                <div class="col-md-12">
+					
+                <p>
+                <b><a href="https://www.linkedin.com/in/pradip-bose-6b18a016/" rel="nofollow" 
+                    target="_blank">Pradip Bose</a> </b> is a Distinguished Research Scientist and manager of <em>Efficient and Resilient Systems</em>
+					at IBM T. J. Watson Research Center. He has over 40 years of experience at IBM and was a member of the pioneering RISC super scalar
+					project at IBM (a pre-cursor to the first RS/6000 system product). He holds M.S. and Ph.D. degrees from University of Illinois at
+					Urbana-Champaign. He is a member of IBM’s elite Academy of Technology and he is a Fellow of the IEEE.
+				</p>
+				
+                <p>
+                <b><a href="https://research.ibm.com/people/augusto-vega" rel="nofollow" 
+					  target="_blank">Augusto Vega</a> </b> is a Senior Research Scientist at IBM T. J. Watson Research Center involved in research and development 
+					  work in the areas of highly-reliable power-efficient embedded designs, cognitive systems and mobile computing. He holds a Ph.D. degree 
+					  from Polytechnic University of Catalonia (UPC), Spain. 	
+                </p>
+				
+                <p>
+                <b><a href="https://research.ibm.com/people/karthik-swaminathan" rel="nofollow" 
+					  target="_blank">Karthik Swaminathan</a> </b> is a Senior Research Scientist at the Efficient and Resilient Systems Group at the IBM T.J Watson Research Center. 
+					  His research has a broad, cross-layer scope examining circuit, architecture and application level optimizations for improving the reliability and energy 
+					  efficiency of multi core systems and accelerators. He graduated with a Ph.D from Penn State University. He is a Senior member of the IEEE.
+                </p>
+				
+                <p>
+                <b><a href="https://www.smu.edu/lyle/departments/ece/people/faculty/jennifer-dworak" rel="nofollow" 
+                    target="_blank">Jennifer Dworak</a> </b> is a Professor of Electrical and Computer Engineering at Southern Methodist University.
+					She holds M.S. and Ph.D degrees from Texas A\&M University. Her research areas of expertise and interest include hardware security
+					and reliability testing of integrated circuits.
+                </p>
+				
+                <p>
+                <b><a href="https://web.stanford.edu/~subh/" rel="nofollow" 
+                    target="_blank">Subhasish Mitra</a> </b> is a Professor (Depts. of Electrical Engineering and Computer Science) at Stanford University,
+					where he leads the Robust Systems Group (among several other leadership roles). Among his many achievements, he won the IEEE Computer
+					Society Harry H. Goode Memorial Award "for sustained contributions to design and test of computing systems in established and emerging
+					technologies," in 2022. He is a Fellow of the IEEE and of the ACM.
+                </p>
+				
+                <p>
+                <b><a href="https://www.linkedin.com/in/chris-wilkerson-6b337a1/" rel="nofollow" 
+                    target="_blank">Chris Wilkerson</a> </b> is a Principal Engineer at Intel Corporation. Chris has 12 years of experience at Intel
+					including 10 years at different Intel research labs, and two in the product micro-architecture team. His areas of expertise include:
+					circuits, processor design, micro-architecture, architecture. In particular, his specialties are: low-voltage circuits, low-voltage
+					micro architecture, low power, reliable design, out-of-order processor design with particular focus on branch prediction, runahead
+					processing, cache design, cache replacement algorithms, etc.
+                </p>
+				
+                <p>
+                <b><a href="https://www.linkedin.com/in/nandhini-chandramoorthy-9b1a8ba7/" rel="nofollow" 
+                    target="_blank">Nandhini Chandramoorthy</a> </b> is a Senior Research Scientist at IBM T. J. Watson Research Center. Her research
+					interests broadly lie in the computer architecture area with focus on energy efficiency, reliability and security. She has published
+					extensively in the area of low-voltage AI processing using joint optimization of hardware and AI algorithms. Recently she’s been
+					working on architectures for Fully Homomorphic Encryption.
+                </p>
+
+                <p>
+                <b><a href="" rel="nofollow" 
+                    target="_blank">Nathan Manohar</a> </b> is a Research Scientist in Cryptography, Security, and Privacy and a member of the Cryptography
+					Research Group at the IBM T. J. Watson Research Center. His main research interests are cryptography, computer security, and, more broadly,
+					theoretical computer science. He is particularly interested in fully homomorphic encryption, secure multi-party computation, and functional
+					encryption. He recently received his Ph.D. in Computer Science from UCLA and joined IBM in 2021.
+                </p>
+
+                <p>
+                <b><a href="https://research.ibm.com/people/nir-drucker" rel="nofollow" 
+                    target="_blank">Nir Drucker </a> </b> is an applied cryptography researcher at IBM Research (Haifa, Israel), the AI security group. He holds
+					a Ph.D. in applied mathematics (cryptography) from the University of Haifa and an M.Sc. degree in operations research from the faculty of
+					Industrial Engineering & Management of the Technion I.I.T. His research interests involve applied cryptography and applied security.
+                </p>
+				
+                <p>
+                <b><a href="https://research.ibm.com/people/silvio-dragone" rel="nofollow" 
+                    target="_blank">Silvio Dragone</a> </b> is a Senior Technical Staff Member (STSM) and the manager of the "Platform Crypto & Security" research
+					group at the Security department of IBM Research Europe. His focus includes leading the design and architecture of high-assurance systems and
+					cryptographic ASICs, as well as the migration of the IBM platforms to quantum-safe cryptography. His career at IBM Research started in 2002 as
+					a doctoral student and in 2007 he became a Research Staff Member. Silvio holds a Ph.D. degree in Electrical Engineering from the Technical
+					University Munich (TUM), Germany.
+                </p>
+				
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="location" class="section location">
+        <div class="container">
+            <div class="row">
+			
+				<div id="registration" class="col-md-3">
+                    <h3 class="section-title">Registration</h3>
+
+                    <p>
+                    DISCC will be held in conjunction with the <b><a href="https://hpca-conf.org/2025/"  target="_blank">
+                    31<sup>st</sup> International Symposium on High-Performance Computer Architecture (HPCA 2025)</a></b>.
+                    Refer to the main venue to continue with the registration process.
+                    </p>
+                </div>
+
+
+                <div class="col-sm-3">
+                    <h3 class="section-title">Event Location</h3>
+                    <address>
+					  <p>Palo Verde A, Westin Las Vegas<br>
+						  Las Vegas (NV), United States</p>
+                    </address>
+                    
+                    <!-- <p><b><a href="https://www.hpca-conf.org/2020/venue-hotel/" target="_blank"> Check main venue site for more information.</a></b></p> -->
+
+                </div>
+                <div class="col-sm-6">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d206252.80376283868!2d-115.33980783574445!3d36.1251644609765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80beb782a4f57dd1%3A0x3accd5e6d5b379a3!2sLas%20Vegas%2C%20NV!5e0!3m2!1sen!2sus!4v1730323595076!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer facts">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="site-info">Share this event on your social networks</p>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://twitter.com/home?status=Check%20out%20the%20Workshop%20on%20Data%20Integrity%20and%20Secure%20Cloud%20Computing%0Ahttps%3A//disccworkshop.org" rel="nofollow" target="_blank"><i class="ion-social-twitter"></i>&nbsp; Twitter</a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//disccworkshop.org/" rel="nofollow" target="_blank"><i class="ion-social-facebook"></i>&nbsp; Facebook</a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//disccworkshop.org/&title=Workshop%20on%20Data%20Integrity%20and%20Secure%20Cloud%20Computing&summary=&source=" rel="nofollow" target="_blank"><i class="ion-social-linkedin-outline"></i>&nbsp; LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+    <script src="assets/js/main.js"></script>
+	<script>
+	$(document).ready(function(){
+		$('[data-toggle="popover"]').popover({
+			trigger : 'hover',
+			title: 'Abstract',
+			html    : true
+		});		
+	});
+	</script>
+</body>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-88908704-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  
+</html>
